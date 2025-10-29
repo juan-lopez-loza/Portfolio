@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const body = document.body
     body.classList.add('no-scroll');
 
-    const minimum_display_time = 3200;
+    const minimum_display_time = 3000;
 
     setTimeout(() => {
         body.classList.remove('no-scroll');

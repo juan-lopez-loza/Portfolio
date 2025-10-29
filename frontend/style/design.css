@@ -106,7 +106,7 @@ section {
 .about-container {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -121,6 +121,8 @@ section {
     padding: 1.8rem;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 375px;
+    max-height: 235px;
 }
 
 .about-box:hover {
@@ -148,14 +150,9 @@ section {
     margin-top: 1rem;
 }
 
-.tiktok img{
-    width: clamp(180px, 50vw, 250px);
-}
-
-.instagram img {
-    width: clamp(80px, 25vw, 150px);
-    height: auto;
-    transition: all 0.2s ease-in-out;
+.social-links img {
+    width: clamp(70px, 25vw, 120px);
+    border-radius: 20px;
 }
 
 .social-links img:hover {
@@ -372,6 +369,9 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
 
 .no-scroll { overflow: hidden; }
 .hidden { opacity: 0 !important; pointer-events: none; }
