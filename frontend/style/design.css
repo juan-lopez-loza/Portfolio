@@ -106,10 +106,22 @@ section {
 .about-container {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.stack-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.stack-container .about-box {
+    max-width: none;
+    max-height: none;
+    flex-grow: 1;
 }
 
 .about-box {
@@ -121,8 +133,7 @@ section {
     padding: 1.8rem;
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 375px;
-    max-height: 235px;
+
 }
 
 .about-box:hover {
@@ -137,7 +148,11 @@ section {
 
 .about-box p {
     font-size: 0.95rem;
-    opacity: 0.9;
+
+}
+
+.about-box h4{
+    margin-bottom: 1rem;
 }
 
 
@@ -147,7 +162,7 @@ section {
     align-items: center;
     gap: 1.5rem;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 4rem;
 }
 
 .social-links img {
@@ -197,6 +212,12 @@ section {
     transform: scale(1.05);
     box-shadow: 0 0 35px rgba(126, 61, 255, 0.3);
     opacity: 1;
+}
+
+@media (max-width: 960px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 
